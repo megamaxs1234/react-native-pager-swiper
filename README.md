@@ -15,7 +15,35 @@ To enable New Architecture in your app:
 
 iOS: Set fabric_enabled => true in Podfile and run pod install.
 Android: Set newArchEnabled=true in gradle.properties.
-Props
+
+
+## Usage
+
+import PagerSwiper from 'react-native-pager-swiper';
+
+function App() {
+  return (
+    <PagerSwiper
+      autoplay
+      autoplayTimeout={3}
+      showsButtons
+      showsPagination
+      loop
+      loadMinimal
+      loadMinimalSize={1}
+      dotColor="#fff"
+      activeDotColor="#ff0000"
+      onIndexChanged={(index) => console.log('Index:', index)}
+    >
+      <View style={{ backgroundColor: 'red', flex: 1 }}><Text>Slide 1</Text></View>
+      <View style={{ backgroundColor: 'green', flex: 1 }}><Text>Slide 2</Text></View>
+      <View style={{ backgroundColor: 'blue', flex: 1 }}><Text>Slide 3</Text></View>
+    </PagerSwiper>
+  );
+}
+
+
+## Props
 
 Prop	Type	Default	Description
 horizontal	boolean	true	Enable horizontal swiping
