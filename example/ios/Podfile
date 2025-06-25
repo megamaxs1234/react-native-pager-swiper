@@ -1,0 +1,21 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '13.4'
+install! 'cocoapods', :deterministic_uuids => false
+
+target 'PagerSwiperExample' do
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    :fabric_enabled => true, # Toggle to false for Old Architecture
+    :hermes_enabled => true
+  )
+
+  pod 'react-native-pager-view', :path => '../node_modules/react-native-pager-view'
+
+  target 'PagerSwiperExampleTests' do
+    inherit! :complete
+  end
+end
