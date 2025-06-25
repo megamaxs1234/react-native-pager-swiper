@@ -1,6 +1,6 @@
 {
   "name": "react-native-pager-swiper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A swipeable carousel for React Native using PagerView, supporting New and Old Architectures",
   "main": "lib/index.js",
   "scripts": {
