@@ -1,6 +1,6 @@
 {
   "name": "react-native-pager-swiper",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "description": "A React Native Swiper component built using react-native-pager-view",
   "repository": {
