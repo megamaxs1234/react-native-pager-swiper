@@ -1,0 +1,42 @@
+{
+  "name": "react-native-pager-swiper",
+  "version": "1.0.0",
+  "description": "A swipeable carousel for React Native using PagerView, supporting New and Old Architectures",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/react-native-pager-swiper.git"
+  },
+  "keywords": [
+    "react-native",
+    "swiper",
+    "carousel",
+    "pager-view",
+    "new-architecture",
+    "fabric",
+    "turbomodules"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.68.0",
+    "react-native-pager-view": ">=6.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.73.0",
+    "typescript": "^5.0.0"
+  },
+  "react-native": {
+    "fabric": {
+      "enabled": true
+    }
+  }
+}
